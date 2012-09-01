@@ -1,0 +1,1 @@
+(ido-better-flex/enable)
