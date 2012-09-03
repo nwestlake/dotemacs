@@ -8,6 +8,7 @@
 (load "nw/cedet")
 (load "nw/defuns")
 (load "nw/flymake")
+(load "nw/global")
 (load "nw/ido")
 (load "nw/indent")
 (load "nw/smart-semicolon")
