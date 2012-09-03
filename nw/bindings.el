@@ -10,3 +10,7 @@
 (global-set-key (kbd "M-b") 'yank)
 
 (global-set-key (kbd "C-k") 'flyspell-auto-correct-word)
+
+(global-set-key (kbd "C-e") 'shell)
+
+(global-set-key (kbd "M-y") 'back-to-indentation)
