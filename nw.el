@@ -16,6 +16,7 @@
 (vendor 'ergoemacs)
 (vendor 'ido-better-flex)
 (vendor 'pymacs)
+(vendor 'nxhtml)
 (vendor 'yasnippet)
 
 ;;Needs to load last
