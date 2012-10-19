@@ -21,3 +21,9 @@
   )
 
 (add-hook 'c-mode-common-hook 'my-cedet-hook)
+
+(defun my-auto-pair-hook ()
+  (electric-pair-mode)
+  )
+
+(add-hook 'c-mode-common-hook 'my-auto-pair-hook)

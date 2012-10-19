@@ -1,5 +1,4 @@
 (global-set-key (kbd "C-b") 'switch-to-buffer)
-(global-set-key (kbd "M-m") 'other-window)
 (global-set-key [(meta right)] 'next-buffer)
 (global-set-key [(meta left)] 'previous-buffer)
 
@@ -14,3 +13,8 @@
 (global-set-key (kbd "C-e") 'shell)
 
 (global-set-key (kbd "M-y") 'back-to-indentation)
+
+(global-set-key (kbd "C-t") 'pop-global-mark)
+
+(global-set-key (kbd "M-m") 'jump-char-forward)
+(global-set-key (kbd "M-M") 'jump-char-backward)
