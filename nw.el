@@ -4,6 +4,7 @@
 ;(setq custom-file "~/.emacs.d/nw/custom.el")
 ;(load custom-file 'noerror)
 
+(load "nw/aspell")
 (load "nw/cedet")
 (load "nw/defuns")
 (load "nw/flymake")
