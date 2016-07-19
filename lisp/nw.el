@@ -1,5 +1,5 @@
 ;;Modified from https://github.com/rmm5t/
-(add-to-list 'load-path "~/.emacs.d/vendor")
+(add-to-list 'load-path "~/.emacs.d/lisp/vendor")
 
 ;(setq custom-file "~/.emacs.d/nw/custom.el")
 ;(load custom-file 'noerror)
