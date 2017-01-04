@@ -7,9 +7,11 @@
 ;; Highlight regions and add special behaviors to regions.
 ;; "C-h d transient" for more info
 (setq transient-mark-mode t)
+(pending-delete-mode t)
 
-;; Modeline info
-(display-time-mode 1)
+;; Display line and column numbers
+(setq line-number-mode    t)
+(setq column-number-mode  t)
 
 ;; Small fringes
 (set-fringe-mode '(1 . 1))
@@ -41,7 +43,11 @@
 ;;(server-start)
 
 ;; Trailing whitespace is unnecessary
-(add-hook 'before-save-hook (lambda () (whitespace-cleanup)))
+(defvar whitespace-cleanup-on-save t)
+;; (setq whitespace-cleanup-on-save nil)
+(add-hook 'before-save-hook
+          (lambda ()
+            (if whitespace-cleanup-on-save (whitespace-cleanup))))
 
 ;; Trash can support
 (setq delete-by-moving-to-trash t)
