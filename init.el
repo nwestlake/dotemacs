@@ -14,6 +14,9 @@
 (when (not package-archive-contents) (package-refresh-contents))
 
 (package 'ergoemacs-mode)
+(setq ergoemacs-theme nil)
+(setq ergoemacs-keyboard-layout "us")
+(ergoemacs-mode 1)
 (package 'flx)
 (package 'flx-ido)
 (package 'smex)
