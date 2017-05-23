@@ -27,7 +27,7 @@
 (set-default 'indicate-empty-lines t)
 
 ;; Line-wrapping
-;;(set-default 'fill-column 78)
+(set-default 'fill-column 80)
 
 ;; Make sure all backup files only live in one place
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
@@ -46,8 +46,8 @@
 (defvar whitespace-cleanup-on-save t)
 ;; (setq whitespace-cleanup-on-save nil)
 (add-hook 'before-save-hook
-          (lambda ()
-            (if whitespace-cleanup-on-save (whitespace-cleanup))))
+	  (lambda ()
+	    (if whitespace-cleanup-on-save (whitespace-cleanup))))
 
 ;; Trash can support
 (setq delete-by-moving-to-trash t)
