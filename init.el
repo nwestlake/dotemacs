@@ -26,13 +26,8 @@
 
 (personal 'aspell)
 (personal 'bindings)
-(personal 'cedet)
 (personal 'defuns)
-(personal 'flymake)
 (personal 'global)
-(personal 'indent)
-(personal 'latex)
-(personal 'smart-semicolon)
 
 ;; submodule managed
 ;; ------------------
