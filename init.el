@@ -6,6 +6,18 @@
 
 (load "~/.emacs.d/personal/defuns")
 
+;; elpa managed
+;; ------------------
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+(package-initialize)
+(when (not package-archive-contents) (package-refresh-contents))
+
+(package 'ergoemacs-mode)
+(package 'flx)
+(package 'flx-ido)
+(package 'smex)
+
 ;; self managed
 ;; ------------------
 
@@ -18,18 +30,6 @@
 (personal 'indent)
 (personal 'latex)
 (personal 'smart-semicolon)
-
-;; elpa managed
-;; ------------------
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
-(package-initialize)
-(when (not package-archive-contents) (package-refresh-contents))
-
-(package 'ergoemacs-mode)
-(package 'flx)
-(package 'flx-ido)
-(package 'smex)
 
 ;; submodule managed
 ;; ------------------
