@@ -13,10 +13,16 @@
 (package-initialize)
 (when (not package-archive-contents) (package-refresh-contents))
 
+(package 'auctex)
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq-default TeX-master nil)
+
 (package 'ergoemacs-mode)
 (setq ergoemacs-theme nil)
 (setq ergoemacs-keyboard-layout "us")
 (ergoemacs-mode 1)
+
 (package 'flx)
 (package 'flx-ido)
 (package 'smex)
