@@ -43,4 +43,3 @@
 
 (vendor 'auto-complete)
 (vendor 'python-mode)
-(vendor 'yasnippet)
