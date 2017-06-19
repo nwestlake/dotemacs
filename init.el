@@ -25,7 +25,9 @@
 
 (package 'flx)
 (package 'flx-ido)
+(package 'jump-char)
 (package 'smex)
+
 
 ;; self managed
 ;; ------------------
@@ -40,6 +42,5 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 
 (vendor 'auto-complete)
-(vendor 'jump-char)
 (vendor 'python-mode)
 (vendor 'yasnippet)
