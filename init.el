@@ -18,6 +18,8 @@
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
 
+(package 'auto-complete)
+
 (package 'ergoemacs-mode)
 (setq ergoemacs-theme nil)
 (setq ergoemacs-keyboard-layout "us")
@@ -41,5 +43,4 @@
 ;; ------------------
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 
-(vendor 'auto-complete)
 (vendor 'python-mode)
