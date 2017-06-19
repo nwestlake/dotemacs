@@ -22,7 +22,7 @@
 
 (package 'ergoemacs-mode)
 (setq ergoemacs-theme nil)
-(setq ergoemacs-keyboard-layout "us")
+(setq ergoemacs-keyboard-layout "gb")
 (ergoemacs-mode 1)
 
 (package 'flx)
