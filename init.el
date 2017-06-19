@@ -28,8 +28,8 @@
 (package 'flx)
 (package 'flx-ido)
 (package 'jump-char)
+(package 'python-mode)
 (package 'smex)
-
 
 ;; self managed
 ;; ------------------
@@ -38,9 +38,3 @@
 (personal 'bindings)
 (personal 'defuns)
 (personal 'global)
-
-;; submodule managed
-;; ------------------
-(add-to-list 'load-path "~/.emacs.d/vendor/")
-
-(vendor 'python-mode)
